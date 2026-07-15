@@ -254,6 +254,13 @@ text-align:center;
     text-align:center;
     box-shadow:var(--shadow);
     transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-height:260px;
 }
 
 .card:hover{
