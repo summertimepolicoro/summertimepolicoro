@@ -616,3 +616,7 @@ transition:.3s;
 /* ===========================
    FINE FILE
 =========================== */
+.navbar a.active{
+    color:#F5E9D5;
+    font-weight:700;
+}
