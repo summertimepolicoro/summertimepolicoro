@@ -620,3 +620,7 @@ transition:.3s;
     color:#F5E9D5;
     font-weight:700;
 }
+.card{
+    text-decoration:none;
+    color:inherit;
+}
