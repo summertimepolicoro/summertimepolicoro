@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summertime | Stabilimento Balneare</title>
 
-<title>Summer Time Policoro</title>
+    <meta name="description" content="Summertime - Stabilimento Balneare con Bar">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 
-<nav>
+<nav class="navbar">
 
-<h1>Summer Time</h1>
-
-<div>
-
-<a href="#ombrelloni">Ombrelloni</a>
-
-<a href="menu.html">Beach Bar</a>
-
-<a href="menupizzeria.html">Menù Ristorante & Pizzeria</a>
-
-<a href="#contatti">Contatti</a>
-
+<div class="logo">
+SUMMERTIME
 </div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#about">Chi siamo</a></li>
+
+<li><a href="#services">Servizi</a></li>
+
+<li><a href="#menu">Bar</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contatti</a></li>
+
+</ul>
 
 </nav>
 
-<div class="hero">
+</header>
 
-<h2>Summer Time Beach Bar</h2>
+<section class="hero">
 
-<p>Relax • Mare • Bella Musica • Bella Gente</p>
+<div class="overlay"></div>
 
-<a class="btn" href="menu.html">Scopri il Menù</a>
+<div class="hero-content">
+
+<h1>SUMMERTIME</h1>
+
+<p>
+
+"E sotto il sole, con un buon mojito al lime...
+<strong>buongiorno, Summertime.</strong>"
+
+</p>
+
+<a href="#about" class="btn">
+
+Scopri il nostro mondo
+
+</a>
 
 </div>
 
-</header>
+</section>
 
-<section id="ombrelloni">
+<section id="about" class="about">
 
-<h2>🏖 Prezzi Ombrelloni</h2>
+<div class="container">
+
+<h2>Il tuo angolo di relax</h2>
+
+<p>
+
+Benvenuti a <strong>Summertime</strong>, lo stabilimento balneare dove il mare,
+il relax e la buona compagnia si incontrano.
+
+Dal primo caffè del mattino fino all'aperitivo al tramonto,
+ti aspettiamo per vivere un'estate indimenticabile.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<div class="container">
+
+<h2>I Nostri Servizi</h2>
 
 <div class="cards">
 
 <div class="card">
 
-<h3>Luglio</h3>
+<i class="fa-solid fa-umbrella-beach"></i>
 
-<h1>18€</h1>
-
-<p>Ombrellone + 2 Lettini</p>
+<h3>Ombrelloni</h3>
 
 </div>
 
 <div class="card">
 
-<h3>Agosto</h3>
+<i class="fa-solid fa-chair"></i>
 
-<h1>20€</h1>
-
-<p>Ombrellone + 2 Lettini</p>
+<h3>Lettini</h3>
 
 </div>
 
 <div class="card">
 
-<h3>Extra</h3>
+<i class="fa-solid fa-martini-glass-citrus"></i>
 
-<p>Lettino ............ €5</p>
+<h3>Bar</h3>
 
-<p>Sdraio ............. €4</p>
+</div>
 
-<p>Puff ............... €5</p>
+<div class="card">
 
-<p>Gazebo ............ €40</p>
+<i class="fa-solid fa-shower"></i>
+
+<h3>Docce</h3>
+
+</div>
 
 </div>
 
@@ -95,83 +141,112 @@
 
 <section id="menu">
 
-<h2>🍹 Beach Bar</h2>
+<div class="container">
 
-<div class="menu">
+<h2>Bar Summertime</h2>
 
-<div>
-
-<h3>Caffetteria</h3>
-
-<ul>
-
-<li>Caffè............€1,20</li>
-
-<li>Cappuccino............€2,00</li>
-
-<li>Cornetto............€1,50</li>
-
-<li>Granita............€2,50</li>
-
-<li>Crema Caffè............€2,50</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h3>Bibite</h3>
-
-<ul>
-
-<li>Acqua............€1,00</li>
-
-<li>Coca Cola............€2,50</li>
-
-<li>Fanta............€2,50</li>
-
-<li>Sprite............€2,50</li>
-
-<li>Estathé............€2,50</li>
-
-</ul>
-
-</div>
-
-<div>
+<div class="menu-category">
 
 <h3>🍺 Birre</h3>
 
-<ul>
-
-<li>Peroni ............ €2,50</li>
-
-<li>Heineken .......... €3,00</li>
-
-<li>Beck's ............ €3,00</li>
-
-<li>Corona ............ €4,00</li>
-
-</ul>
+<div class="menu-item"><span>Peroni</span><span>€2,50</span></div>
+<div class="menu-item"><span>Dreher al Limone</span><span>€3,00</span></div>
+<div class="menu-item"><span>Heineken</span><span>€3,00</span></div>
+<div class="menu-item"><span>Nastro Azzurro</span><span>€3,00</span></div>
+<div class="menu-item"><span>Beck's</span><span>€3,00</span></div>
+<div class="menu-item"><span>Ichnusa</span><span>€3,50</span></div>
+<div class="menu-item"><span>Tennent's</span><span>€4,00</span></div>
+<div class="menu-item"><span>BJorne</span><span>€4,00</span></div>
+<div class="menu-item"><span>Corona</span><span>€4,00</span></div>
 
 </div>
 
-<div>
+<div class="menu-category">
 
-<h3>Cocktail</h3>
+<h3>🥤 Bibite e Succhi</h3>
 
-<ul>
+<div class="menu-item"><span>Acqua</span><span>€1,00</span></div>
 
-<li>Spritz............€5,00</li>
+<div class="menu-item"><span>Coca Cola</span><span>€2,50</span></div>
 
-<li>Mojito............€6,00</li>
+<div class="menu-item"><span>Fanta</span><span>€2,50</span></div>
 
-<li>Gin Tonic............€6,00</li>
+<div class="menu-item"><span>Estathè</span><span>€2,50</span></div>
 
-<li>Moscow Mule............€6,00</li>
+<div class="menu-item"><span>Sprite</span><span>€2,50</span></div>
 
-</ul>
+<div class="menu-item"><span>Schweppes</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Succhi di Frutta</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Cedrata</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Cocktail San Pellegrino</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Red Bull</span><span>€3,50</span></div>
+
+<div class="menu-item"><span>Monster</span><span>€4,00</span></div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>☕ Caffetteria</h3>
+
+<div class="menu-item"><span>Caffè</span><span>€1,20</span></div>
+
+<div class="menu-item"><span>Espressino</span><span>€1,50</span></div>
+
+<div class="menu-item"><span>Cappuccino</span><span>€2,00</span></div>
+
+<div class="menu-item"><span>Granita</span><span>€2,50</span></div>
+
+<div class="menu-item"><span>Crema Caffè</span><span>€2,50</span></div>
+
+<div class="menu-item"><span>Cornetto</span><span>€1,50</span></div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>🍹 Aperitivi e Cocktail</h3>
+
+<div class="menu-item"><span>Campari</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Crodino</span><span>€3,00</span></div>
+
+<div class="menu-item"><span>Spritz</span><span>€5,00</span></div>
+
+<div class="menu-item"><span>Cocktail Base</span><span>€6,00</span></div>
+
+<div class="menu-item"><span>Cocktail Premium</span><span>€8,00</span></div>
+
+<div class="menu-item"><span>Pizzetta o Rustico</span><span>€2,00</span></div>
+
+</div>
+
+</div>
+
+</section>
+<section id="gallery">
+
+<div class="container">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Spiaggia">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" alt="Mare">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Lettini">
+
+<img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Cocktail">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Tramonto">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Relax">
 
 </div>
 
@@ -179,27 +254,61 @@
 
 </section>
 
-<section id="contatti">
+<section id="contact">
 
-<h2>Seguici</h2>
+<div class="container">
 
-<div class="social">
+<h2>Contatti</h2>
 
-<a class="instagram"
-href="https://instagram.com/summertimepolicoro2026"
-target="_blank">
+<div class="contact-box">
 
-Instagram
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+<strong>Telefono:</strong>
+
+377 361 6254
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<strong>Indirizzo:</strong>
+
+In aggiornamento
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+<strong>Orari:</strong>
+
+Tutti i giorni 08:00 - 20:00
+
+</p>
+
+<div class="contact-buttons">
+
+<a href="tel:+393773616254" class="btn">
+
+Chiama Ora
 
 </a>
 
-<a class="meteo"
-href="https://www.ilmeteo.it/meteo/Policoro"
-target="_blank">
+<a href="https://wa.me/393773616254" class="btn" target="_blank">
 
-Meteo Policoro
+WhatsApp
 
 </a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -207,11 +316,23 @@ Meteo Policoro
 
 <footer>
 
-Summer Time Beach Bar © 2026
+<p>
+
+© 2026 SUMMERTIME
+
+</p>
+
+<p>
+
+"E sotto il sole, con un buon mojito al lime...
+buongiorno, Summertime."
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
