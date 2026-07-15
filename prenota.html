@@ -1,44 +1,154 @@
-<section>
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prenota | Summertime</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+SUMMERTIME
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="#prenotazione">Prenota</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" style="height:55vh;">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Prenota Online</h1>
+
+<p>
+
+Prenota il tuo ombrellone in pochi secondi.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="prenotazione">
 
 <div class="container">
 
-<h2>Prenota il tuo Ombrellone</h2>
+<h2>Prenotazione</h2>
 
 <form id="bookingForm">
 
-<label>Nome</label>
-<input type="text" id="nome" required>
+<label>Nome e Cognome</label>
 
-<label>Data</label>
-<input type="date" id="data" required>
+<input
+type="text"
+id="nome"
+placeholder="Mario Rossi"
+required>
+
+<label>Numero di Telefono</label>
+
+<input
+type="tel"
+id="telefono"
+placeholder="3331234567"
+required>
+
+<label>Data della Prenotazione</label>
+
+<input
+type="date"
+id="data"
+required>
 
 <label>Mese</label>
 
 <select id="mese">
 
-<option value="Luglio">Luglio</option>
+<option value="Luglio">
+Luglio (€18)
+</option>
 
-<option value="Agosto">Agosto</option>
+<option value="Agosto">
+Agosto (€20)
+</option>
 
 </select>
 
 <label>Lettini Extra</label>
 
-<input type="number" id="lettini" value="0" min="0">
+<input
+type="number"
+id="lettini"
+value="0"
+min="0">
 
 <label>Sdraio</label>
 
-<input type="number" id="sdraio" value="0" min="0">
+<input
+type="number"
+id="sdraio"
+value="0"
+min="0">
 
 <label>Pouf</label>
 
-<input type="number" id="pouf" value="0" min="0">
+<input
+type="number"
+id="pouf"
+value="0"
+min="0">
 
-<h2 id="totale">Totale: €18</h2>
+<label>Note</label>
 
-<button type="button" class="btn" onclick="prenota()">
+<textarea
+id="note"
+rows="5"
+placeholder="Scrivi eventuali richieste..."></textarea>
 
-Invia su WhatsApp
+<h2 id="totale">
+
+Totale Stimato: €18
+
+</h2>
+
+<button
+type="button"
+class="btn"
+onclick="prenota()">
+
+Invia richiesta su WhatsApp
 
 </button>
 
@@ -47,3 +157,157 @@ Invia su WhatsApp
 </div>
 
 </section>
+<section>
+
+<div class="container">
+
+<h2>Informazioni</h2>
+
+<p style="text-align:center;font-size:18px;max-width:800px;margin:auto;">
+
+Ogni postazione comprende <strong>1 ombrellone e 2 lettini</strong>.
+
+È possibile aggiungere lettini extra, sdraio o pouf con il supplemento previsto dal listino.
+
+L'invio del modulo rappresenta una <strong>richiesta di prenotazione</strong> che dovrà essere confermata da Summertime.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Contatti</h2>
+
+<div class="contact-box">
+
+<p>
+
+📞 <strong>377 361 6254</strong>
+
+</p>
+
+<div class="contact-buttons">
+
+<a href="tel:+393773616254" class="btn">
+
+Chiama
+
+</a>
+
+<a href="https://wa.me/393773616254"
+
+class="btn"
+
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Summertime
+
+</p>
+
+<p>
+
+"E sotto il sole, con un buon mojito al lime... buongiorno Summertime."
+
+</p>
+
+</footer>
+
+<script>
+
+const mese=document.getElementById("mese");
+const lettini=document.getElementById("lettini");
+const sdraio=document.getElementById("sdraio");
+const pouf=document.getElementById("pouf");
+
+function aggiornaTotale(){
+
+let totale = mese.value==="Luglio" ? 18 : 20;
+
+totale += Number(lettini.value) * 5;
+totale += Number(sdraio.value) * 4;
+totale += Number(pouf.value) * 5;
+
+document.getElementById("totale").innerHTML="Totale Stimato: €"+totale;
+
+}
+
+mese.addEventListener("change",aggiornaTotale);
+lettini.addEventListener("input",aggiornaTotale);
+sdraio.addEventListener("input",aggiornaTotale);
+pouf.addEventListener("input",aggiornaTotale);
+
+aggiornaTotale();
+
+function prenota(){
+
+const nome=document.getElementById("nome").value;
+const telefono=document.getElementById("telefono").value;
+const data=document.getElementById("data").value;
+const note=document.getElementById("note").value;
+
+let totale = mese.value==="Luglio" ? 18 : 20;
+
+totale += Number(lettini.value) * 5;
+totale += Number(sdraio.value) * 4;
+totale += Number(pouf.value) * 5;
+
+const messaggio=`🌴 Richiesta Prenotazione Summertime
+
+👤 Nome: ${nome}
+
+📞 Telefono: ${telefono}
+
+📅 Data: ${data}
+
+📍 Periodo: ${mese.value}
+
+🏖️ Ombrellone + 2 lettini inclusi
+
+🪑 Lettini Extra: ${lettini.value}
+
+🌴 Sdraio: ${sdraio.value}
+
+🛋️ Pouf: ${pouf.value}
+
+📝 Note:
+${note}
+
+💶 Totale stimato: €${totale}
+
+Attendo conferma della disponibilità. Grazie!`;
+
+window.open(
+"https://wa.me/393773616254?text="+encodeURIComponent(messaggio),
+"_blank"
+);
+
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
