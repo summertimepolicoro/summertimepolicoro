@@ -160,7 +160,7 @@ color:var(--sand);
 
 .hero-btn:hover{
 
-    transform:translateX(-50%) translateY(-4px);
+    transform:translate(-50%,-50%) scale(1.05);
 
     background:#1E4F7A;
 
