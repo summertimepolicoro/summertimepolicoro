@@ -819,19 +819,37 @@ font-size:24px;
 
 .hero{
 
-    height:80vh;
+    height:100vh;
 
-    background-position:center;
+    background-position:35% center;
+
+    background-size:cover;
 
 }
 
 .hero-btn{
 
-    bottom:35px;
+    left:50%;
+
+    top:82%;
+
+    transform:translate(-50%,-50%);
+
+    width:80%;
+
+    max-width:300px;
+
+    text-align:center;
 
     font-size:16px;
 
-    padding:15px 30px;
+    padding:15px 20px;
+
+}
+
+.hero-btn:hover{
+
+    transform:translate(-50%,-50%) scale(1.03);
 
 }
 
