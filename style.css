@@ -132,11 +132,11 @@ color:var(--sand);
 
     position:absolute;
 
-    left:50%;
+    left:63%;
 
-    bottom:70px;
+    top:50%;
 
-    transform:translateX(-50%);
+    transform:translate(-50%,-50%);
 
     background:#2F6FA5;
 
