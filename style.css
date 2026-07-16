@@ -33,69 +33,87 @@ body{
 }
 
 /* HEADER */
+/* ===========================
+   NAVBAR
+=========================== */
 
 header{
 
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:1000;
-transition:.4s;
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:.3s;
 
 }
 
 .navbar{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    max-width:1300px;
 
-padding:20px 8%;
+    margin:auto;
 
-background:rgba(47,111,165,.90);
+    display:flex;
 
-backdrop-filter:blur(8px);
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
 
 }
 
-.logo{
+.logo img{
 
-font-size:30px;
+    height:70px;
 
-font-weight:700;
+    width:auto;
 
-letter-spacing:3px;
+    transition:.3s;
 
-color:white;
+}
+
+.logo img:hover{
+
+    transform:scale(1.08);
 
 }
 
 .navbar ul{
 
-display:flex;
+    display:flex;
 
-gap:30px;
+    align-items:center;
 
-list-style:none;
+    gap:35px;
 
-}
-
-.navbar a{
-
-text-decoration:none;
-
-color:white;
-
-font-weight:500;
-
-transition:.3s;
+    list-style:none;
 
 }
 
-.navbar a:hover{
+.navbar ul li a{
 
-color:var(--sand);
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.navbar ul li a:hover{
+
+    color:#FFD166;
 
 }
 
@@ -857,6 +875,33 @@ font-size:24px;
 .hero-btn:hover{
 
     transform:translate(-50%,-50%) scale(1.03);
+
+}
+
+}
+@media(max-width:768px){
+
+.navbar{
+
+    padding:15px 20px;
+
+}
+
+.logo img{
+
+    height:55px;
+
+}
+
+.navbar ul{
+
+    gap:15px;
+
+}
+
+.navbar ul li a{
+
+    font-size:14px;
 
 }
 
