@@ -102,25 +102,15 @@ color:var(--sand);
 /* HERO */
 
 .hero{
-
-height:100vh;
-
-background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-position:relative;
-
-text-align:center;
-
+    position:relative;
+    height:100vh;
+    background:url("images/banner-santorini.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .overlay{
