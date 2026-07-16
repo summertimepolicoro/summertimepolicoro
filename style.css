@@ -125,21 +125,19 @@ color:var(--sand);
 
 }
 /* ===========================
-   PULSANTE HERO
+   HERO BUTTON
 =========================== */
 
 .hero-btn{
 
     position:absolute;
 
-    left:70%;
-
-    top:30%;
+    left:74%;
+    top:60%;
 
     transform:translate(-50%,-50%);
 
     background:#2F6FA5;
-
     color:#fff;
 
     text-decoration:none;
@@ -149,12 +147,21 @@ color:var(--sand);
     border-radius:50px;
 
     font-size:18px;
-
     font-weight:700;
 
-    transition:.35s;
-
     box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+    transition:all .3s ease;
+
+    z-index:100;
+
+}
+
+.hero-btn:hover{
+
+    transform:translate(-50%,-50%) scale(1.05);
+
+    background:#1E4F7A;
 
 }
 
