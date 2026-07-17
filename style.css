@@ -906,3 +906,38 @@ font-size:24px;
 }
 
 }
+/* ===========================
+   HERO MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.hero{
+
+    background:url("images/hero-mobile.png") center center/cover no-repeat;
+
+    height:100vh;
+
+}
+
+.hero-btn{
+
+    left:50%;
+
+    top:84%;
+
+    transform:translate(-50%,-50%);
+
+    width:85%;
+
+    max-width:320px;
+
+    text-align:center;
+
+    padding:16px 20px;
+
+    font-size:16px;
+
+}
+
+}
