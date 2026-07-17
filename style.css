@@ -334,15 +334,16 @@ text-align:center;
    SERVIZI
 =========================== */
 
-.services{
-    background:var(--sand);
-}
+.services-grid{
 
-.cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    margin-top:40px;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
 }
 
 .card{
