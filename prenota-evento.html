@@ -84,8 +84,6 @@ Compila il modulo e inviaci la richiesta tramite WhatsApp.
 
 <input type="number" id="persone" placeholder="Numero Persone" required>
 
-<input type="date" id="data" required>
-
 <input type="time" id="ora" required>
 
 <textarea id="note" placeholder="Eventuali richieste particolari..."></textarea>
@@ -170,13 +168,17 @@ const telefono=document.getElementById("telefono").value;
 
 const persone=document.getElementById("persone").value;
 
-const data=document.getElementById("data").value;
-
 const ora=document.getElementById("ora").value;
 
 const note=document.getElementById("note").value;
 
 const messaggio=`🍽️ PRENOTAZIONE TAVOLO
+
+<p style="text-align:center; margin-bottom:30px; color:#666;">
+
+📅 Evento in programma il <strong>30 Luglio</strong>
+
+</p>
 
 Buonasera!
 
@@ -188,9 +190,9 @@ Vorrei prenotare un tavolo.
 
 👥 Persone: ${persone}
 
-📅 Data: ${data}
+📅 Evento: 30 Luglio
 
-🕒 Ora: ${ora}
+🕒 Ora di arrivo: ${ora}
 
 📝 Note: ${note}`;
 
