@@ -950,3 +950,111 @@ font-size:24px;
 }
 
 }
+/* ===========================
+   EVENTI
+=========================== */
+
+.event-poster{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.20);
+
+}
+
+.event-poster img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.event-poster img:hover{
+
+    transform:scale(1.02);
+
+}
+
+.event-description{
+
+    max-width:800px;
+
+    margin:50px auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.event-description h3{
+
+    color:#1E4F7A;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+
+}
+
+.event-description p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.event-description .btn{
+
+    margin-top:25px;
+
+    display:inline-block;
+
+}
+@media(max-width:768px){
+
+.event-description{
+
+    padding:25px;
+
+}
+
+.event-description h3{
+
+    font-size:24px;
+
+}
+
+.event-description p{
+
+    font-size:16px;
+
+}
+
+.event-poster{
+
+    margin:20px;
+
+}
+
+}
